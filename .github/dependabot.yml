@@ -58,6 +58,19 @@ updates:
       interval: weekly
 
   - directory: /
+    exclude-paths:
+      # Allow updates for dependencies here to be handled separately.
+      - src/**
+    package-ecosystem: pip
+    schedule:
+      interval: weekly
+
+  - directory: /src
+    ignore:
+      # We cannot use newer versions of these packages so it is pointless to get
+      # updates offered.
+      - dependency-name: black
+      - dependency-name: click
     package-ecosystem: pip
     schedule:
       interval: weekly
