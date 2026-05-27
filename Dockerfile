@@ -15,6 +15,13 @@ ENV PYTHON_PIPENV_VERSION=2026.0.3
 ENV PYTHON_SETUPTOOLS_VERSION=82.0.0
 
 ###
+# Install system package dependencies
+###
+RUN apk --no-cache add \
+    # This is necessary to isntall cisagov/skeleton-python-library from a git reference
+    git=2.52.0-r0
+
+###
 # Install the specified versions of pip and setuptools into the system
 # Python environment; install the specified version of pipenv into the system Python
 # environment; set up a Python virtual environment (venv); and install the specified
