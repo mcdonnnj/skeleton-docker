@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "fff0baed5857419701d11d584dfb2d62aa20194840f50d6d309400c3a54cfb56"
+            "sha256": "7a3b81d6f8b739232cd92ae87f54974764eb716eadbe6d4afa5ffd69105339c5"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -23,7 +23,7 @@
             "version": "==0.6.2"
         },
         "example": {
-            "git": "https://github.com/cisagov/skeleton-python-library",
+            "git": "https://github.com/cisagov/skeleton-python-library.git",
             "ref": "b122bbddb6b6be656c655a1049d88bbdf12f940a"
         },
         "schema": {
